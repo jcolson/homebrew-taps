@@ -13,3 +13,7 @@ brew install https://raw.githubusercontent.com/jcolson/homebrew-taps/master/Form
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## Install maven with no openjdk dependency
+brew install jcolson/taps/maven-noopenjdk
+
