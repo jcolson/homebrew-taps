@@ -7,6 +7,11 @@ class MavenNoopenjdk < Formula
   license "Apache-2.0"
   revision 1
 
+  livecheck do
+    url "https://maven.apache.org/download.cgi"
+    regex(/href=.*?apache-maven[._-]v?(\d+(?:\.\d+)+)-bin\.t/i)
+  end
+
   bottle :unneeded
 
   
