@@ -2,5 +2,5 @@
 basedir="$(dirname ${0})"
 cd "${basedir}"
 git pull > /dev/null
-curl -s https://raw.githubusercontent.com/Homebrew/homebrew-core/master/Formula/maven.rb | perl -pe 's/class Maven < Formula/class MavenNoopenjdk < Formula/g; s/depends_on \"openjdk\"//g' | perl -0pe 's/bottle do.*?end/bottle :unneeded/gms' > Formula/maven-noopenjdk.rb
+curl -s https://raw.githubusercontent.com/Homebrew/homebrew-core/master/Formula/maven.rb | perl -pe 's/class Maven < Formula/class MavenNoopenjdk < Formula/g; s/depends_on \"openjdk\"//g' | perl -0pe 's/bottle do.*?end//gms' > Formula/maven-noopenjdk.rb
 git add . && git commit -m "updated maven.rb from homebrew-core/master/Formula/maven.rb" > /dev/null && git push

@@ -11,7 +11,7 @@ class MavenNoopenjdk < Formula
     regex(/href=.*?apache-maven[._-]v?(\d+(?:\.\d+)+)-bin\.t/i)
   end
 
-  bottle :unneeded
+  
 
   
 
